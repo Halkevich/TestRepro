@@ -324,7 +324,7 @@ function showForm(){
                 [...conteiner.children].map((elem, i ) => {
                     if(elem.tagName != 'BUTTON') dataArray[i] = elem.value;
                 });
-                [fieldName, fieldPhone, fieldEmail, fielDeliveryMethods, fieldDateCurrent, fiedDistA, fiedDistB, fiedDateDeparture, fiedDateDelivery] = dataArray;
+                [fieldName, fieldPhone, fieldEmail,  fieldDateCurrent, fielDeliveryMethods, fiedDistA, fiedDistB, fiedDateDeparture, fiedDateDelivery] = dataArray;
                 console.log(dataArray);
                 let price = culculation()
                 showCalculation(price)
