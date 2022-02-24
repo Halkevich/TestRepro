@@ -1,49 +1,66 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    padding: 20px;
-}
-
-.tabs-conteiner{
+.container{
+    height:  120px;
     background: beige;
 }
 
-ul{
-    list-style: none;
-}
-
-.tabs-conteiner .tabs{
+.my-tabs{
+    width: 75%;
     display: flex;
-    background: azure;
+    justify-content: space-around;
+    margin: 100px auto;
+    position: relative;
 }
 
-.tabs-conteiner .tabs li{
-    border-bottom: 2px solid #363;
-    padding: 20px;
-}
 
-.tabs-conteiner .tabs li:hover{
-    background: #336633;
-    color: #fff;
-    cursor: pointer;
-}
-
-.tabs-conteiner .tabs li.active{
-    background: #336633;
-    color: #fff;
-}
-
-.tabs-conteiner .tab-content li{
-    display: none;
-}
-
-.tabs-conteiner .tab-content li.active{
+.tabs{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(11, 149, 184);
+    padding: 20px 0px;
+    border-radius: 5px;
+    transition: 0.2s ease;
+    width: 200px;
     display: block;
+    text-align: center;
+    
+}
+
+.tabs:hover{
+    background-color: rgb(46, 182, 187);
 }
 
 .tooltip{
-    color: aqua;
+    position: absolute;
+    padding: 9px;
+    text-align: center;
+    background-color:rgb(63, 146, 139);
+    border: 1px solid rgb(33, 25, 107);
+    color: white;
+    display: block;
+    transition: 0.4s ease;
+    width: 200px;
+    height: 50px;
+    top:-60px;
+    opacity: 0;
+    border-radius: 10px;
+    visibility: hidden;
+    animation: odsoky 1s ease-in-out infinite  alternate;
+
 }
+
+@keyframes odsoky {
+    0%{
+      transform: translateY(6px); 
+    }
+  
+    100%{
+      transform: translateY(1px); 
+    }
+  
+  }
