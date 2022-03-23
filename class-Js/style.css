@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    background-image: url(../class-Js/Background-Images.jpg);
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+.user_form{
+    padding: 40px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;  
+    flex-wrap: wrap;
+    gap: 10px;
+    color: white;
+}
+
+
+.user_list_item {
+   padding: 10px;
+
+}
+
+
+.user_list_item_tel,
+.user_list_item_email,
+.user_list_item_address,
+.user_list_item_name{
+    padding: 10px;
+    text-decoration: none;
+}
+
+input{
+    border: 2px solid rgba(26, 73, 204, 0.4);
+}
+
+
+.write_button_submit{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(17, 48, 105);
+    border-radius: 10px;
+    color: white;
+}
+
+.note_list{
+    padding: 10px;
+}
+
+.user_list_item{
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: rgba(31, 88, 134, 0.233);
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+
+.user_list_item > div{
+    margin-bottom: 0.7em;
+    
+}
+
+
+.user_list_item_edit, 
+.user_list_item_remove {
+    padding: 5px;
+    width: 50px;
+    color: rgba(249, 250, 255, 0.911);
+    background-color: rgba(20, 134, 201, 0.89);
+    border: 2px solid rgb(4, 31, 46);
+}
+.user_list_item_edit {
+    margin-right: 10px;
+}

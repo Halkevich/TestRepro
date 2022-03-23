@@ -203,4 +203,6 @@ ContactApp.prototype.init = function () {
     formContact.addEventListener('submit', (e) => {
         this.addContact(e)
     })
+
+  
 }
